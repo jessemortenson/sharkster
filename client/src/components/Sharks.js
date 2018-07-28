@@ -10,7 +10,7 @@ export default class Sharks extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     axios.get('/api/sharks')
       .then((response) => {
         this.setState({sharks: response.data});
